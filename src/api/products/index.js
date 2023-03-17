@@ -1,6 +1,7 @@
 import Express from "Express";
 import createHttpError from "http-errors";
 import ProductsModel from "../model.js";
+import q2m from "query-to-mongo";
 
 const productsRouter = Express.Router();
 
@@ -16,8 +17,42 @@ productsRouter.post("/", async (req, res, next) => {
 
 productsRouter.get("/", async (req, res, next) => {
   try {
-    const products = await ProductsModel.find();
-    res.send(products);
+    const { category, minPrice, maxPrice } = req.query;
+    console.log(req.query);
+    const filter = {};
+    if (category) {
+      filter.category = category;
+    }
+
+    if (minPrice !== undefined || maxPrice !== undefined) {
+      filter.price = {};
+
+      if (minPrice !== undefined) {
+        filter.price.$gte = Number(minPrice);
+      }
+
+      if (maxPrice !== undefined) {
+        filter.price.$lte = Number(maxPrice);
+      }
+    }
+
+    const mongoQuery = q2m({ ...req.query });
+
+    const products = await ProductsModel.find(filter, mongoQuery.options.fields)
+      .limit(mongoQuery.options.limit)
+      .skip(mongoQuery.options.skip)
+      .sort(mongoQuery.options.sort)
+      .populate("reviews");
+
+    const total = await ProductsModel.countDocuments(filter);
+    const numberOfPages = Math.ceil(total / mongoQuery.options.limit);
+
+    res.send({
+      links: mongoQuery.links("http://localhost:3001/products", total),
+      total,
+      numberOfPages,
+      products,
+    });
   } catch (error) {
     next(error);
   }
