@@ -1,11 +1,13 @@
-import mongoose
+import mongoose from mongoose
+const { Schema, model } = mongoose
 
-const { Schema, model } from "mongoose";
+const min = 0
+const max = 5
 
 const reviewsSchema = new Schema(
     {
-        "comment": "A good book but definitely I don't like many parts of the plot", //REQUIRED
-        "rate": 3, //REQUIRED, max 5
+        "comment": {type: String, required: true},
+        "rate": {type: Number, min:min, max: max, required: true}
     },
     {
     timestamps: true,

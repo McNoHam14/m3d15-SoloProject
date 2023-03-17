@@ -1,23 +1,41 @@
 import Express from "express";
-import uniqid from "uniqid";
 import { getReviews, writeReviews } from "../../lib/fs-tools.js";
 
 const reviewsRouter = Express.Router();
 
-reviewsRouter.post("/:productId/reviews", async (req, res, next) => {
-  const newReview = {
-    ...req.body,
-    productId: req.params.productId,
-    createdAt: new Date(),
-    updatedAt: new Date(),
-    id: uniqid(),
-  };
+reviewsRouter.post("/", async (req, res, next) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
 
-  const reviews = await getReviews();
-  reviews.push(newReview);
-  await writeReviews(reviews);
+reviewsRouter.get("/", async (req, res, next) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
 
-  res.send(newReview);
+reviewsRouter.get("/:reviewId", async (req, res, next) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+reviewsRouter.put("/:reviewId", async (req, res, next) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
+});
+
+reviewsRouter.delete("/:reviewId", async (req, res, next) => {
+  try {
+  } catch (error) {
+    next(error);
+  }
 });
 
 export default reviewsRouter;
