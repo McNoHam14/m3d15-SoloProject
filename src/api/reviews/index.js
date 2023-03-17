@@ -12,7 +12,6 @@ reviewsRouter.post("/:productId/reviews", async (req, res, next) => {
     updatedAt: new Date(),
     id: uniqid(),
   };
-  //   console.log(newReview);
 
   const reviews = await getReviews();
   reviews.push(newReview);
