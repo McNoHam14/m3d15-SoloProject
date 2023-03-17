@@ -1,0 +1,68 @@
+[
+  {
+    "name": "blackberry",
+    "description": "somthing longer",
+    "brand": "blackberry",
+    "imageUrl": "http://localhost:3009/ek26t1xrdlesikub0.webp",
+    "price": "200",
+    "category": "smartphones",
+    "createdAt": "2023-03-03T12:30:57.131Z",
+    "updatedAt": "2023-03-03T15:19:11.598Z",
+    "id": "ek26t1xrdlesikub0"
+  },
+  {
+    "name": "d500",
+    "description": "somthing longer",
+    "brand": "samsung",
+    "imageUrl": "http://localhost:3009/ek26t1yt1lesj4tcr.webp",
+    "price": 100,
+    "category": "smartphones",
+    "createdAt": "2023-03-03T12:46:29.018Z",
+    "updatedAt": "2023-03-03T15:14:19.455Z",
+    "id": "ek26t1yt1lesj4tcr"
+  },
+  {
+    "name": "d500",
+    "description": "somthing longer",
+    "brand": "apple",
+    "imageUrl": "http://localhost:3009/ek26t1yt1lesj5646.webp",
+    "price": 100,
+    "category": "smartphones",
+    "createdAt": "2023-03-03T12:46:45.558Z",
+    "updatedAt": "2023-03-03T15:14:43.407Z",
+    "id": "ek26t1yt1lesj5646"
+  },
+  {
+    "name": "walkman",
+    "description": "somthing longer",
+    "brand": "sony ericcson",
+    "imageUrl": "http://localhost:3009/ek26t1yt1lesllnzk.png",
+    "price": 100,
+    "category": "smartphones",
+    "createdAt": "2023-03-03T13:55:34.448Z",
+    "updatedAt": "2023-03-03T14:39:55.838Z",
+    "id": "ek26t1yt1lesllnzk"
+  },
+  {
+    "name": "razr",
+    "description": "somthing longer",
+    "brand": "motorola",
+    "imageUrl": "http://localhost:3009/ek26t1yt1leslnsz0.jpeg",
+    "price": 100,
+    "category": "smartphones",
+    "createdAt": "2023-03-03T13:57:14.220Z",
+    "updatedAt": "2023-03-03T15:09:09.933Z",
+    "id": "ek26t1yt1leslnsz0"
+  },
+  {
+    "name": "d500",
+    "description": "a description of the apple iPhone",
+    "brand": "new brand",
+    "imageUrl": "http://localhost:3009/ek26t24n8lesp8d7j.webp",
+    "price": 500,
+    "category": "smartphones",
+    "createdAt": "2023-03-03T15:37:12.415Z",
+    "updatedAt": "2023-03-03T15:38:16.712Z",
+    "id": "ek26t24n8lesp8d7j"
+  }
+]

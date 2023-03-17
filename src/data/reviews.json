@@ -1,0 +1,66 @@
+[
+  {
+    "comment": "i like this product",
+    "rate": 3,
+    "productId": "ek26t1xrdlesikub0",
+    "createdAt": "2023-03-03T15:15:40.738Z",
+    "updatedAt": "2023-03-03T15:15:40.738Z",
+    "id": "ek26t24n8lesogojn"
+  },
+  {
+    "comment": "i really like this product",
+    "rate": 5,
+    "productId": "ek26t1xrdlesikub0",
+    "createdAt": "2023-03-03T15:15:48.953Z",
+    "updatedAt": "2023-03-03T15:15:48.953Z",
+    "id": "ek26t24n8lesoguvt"
+  },
+  {
+    "comment": "i don't really like this product",
+    "rate": 1,
+    "productId": "ek26t1xrdlesikub0",
+    "createdAt": "2023-03-03T15:15:59.255Z",
+    "updatedAt": "2023-03-03T15:15:59.255Z",
+    "id": "ek26t24n8lesoh2tz"
+  },
+  {
+    "comment": "i like this product",
+    "rate": 3,
+    "productId": "ek26t24n8lesogojn",
+    "createdAt": "2023-03-03T16:37:26.826Z",
+    "updatedAt": "2023-03-03T16:37:26.826Z",
+    "id": "ek26t24n8lesrdu3u"
+  },
+  {
+    "comment": "product is ok",
+    "rate": 2,
+    "productId": "ek26t24n8lesogojn",
+    "createdAt": "2023-03-03T16:37:45.397Z",
+    "updatedAt": "2023-03-03T16:37:45.397Z",
+    "id": "ek26t24n8lesre8fp"
+  },
+  {
+    "comment": "product is quite good",
+    "rate": 4,
+    "productId": ":productId",
+    "createdAt": "2023-03-03T16:41:02.113Z",
+    "updatedAt": "2023-03-03T16:41:02.113Z",
+    "id": "ek26t24n8lesrig81"
+  },
+  {
+    "comment": "product is quite amazing",
+    "rate": 5,
+    "productId": "ek26t24n8lesogojn",
+    "createdAt": "2023-03-03T16:41:48.718Z",
+    "updatedAt": "2023-03-03T16:41:48.718Z",
+    "id": "ek26t24n8lesrjg6m"
+  },
+  {
+    "comment": "product is not amazing",
+    "rate": 1,
+    "productId": "ek26t24n8lesogojn",
+    "createdAt": "2023-03-03T17:20:49.420Z",
+    "updatedAt": "2023-03-03T17:20:49.421Z",
+    "id": "ek26t24n8lessxma5"
+  }
+]
