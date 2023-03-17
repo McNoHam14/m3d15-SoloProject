@@ -4,7 +4,6 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import productsRouter from "./api/products/index.js";
-import reviewsRouter from "./api/reviews/index.js";
 import { join, dirname, extname } from "path";
 import { fileURLToPath } from "url";
 
@@ -26,7 +25,6 @@ server.use(Express.static(imagesFolderPath));
 // Endpoints
 
 server.use("/products", productsRouter);
-server.use("/products", reviewsRouter);
 
 mongoose.connect(process.env.MONGO_URL);
 

@@ -2,6 +2,11 @@ import mongoose from "mongoose";
 
 const { Schema, model } = mongoose;
 
+const reviewsSchema = new Schema({
+  comment: { type: String, required: true },
+  rate: { type: Number, required: true, min: 1, max: 5 },
+});
+
 const productsSchema = new Schema(
   {
     name: { type: String, required: true },
@@ -9,12 +14,10 @@ const productsSchema = new Schema(
     brand: { type: String, required: true },
     imageUrl: { type: String, required: true },
     price: { type: Number, required: true },
-    category: { type: String, required: true },
-    reviews: [String],
+    category: { type: String },
+    reviews: [reviewsSchema],
   },
-  {
-    timestamps: true,
-  }
+  { timestamps: true }
 );
 
-export default model("Product", productsSchema);
+export default model("Products", productsSchema);
